@@ -2,20 +2,20 @@
     display: grid;
     height: 100px;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-rows:  2fr 3fr;
     grid-template-areas: 
      "header header header "
      "sidebar main-content main-content"
     
     
     ;
-    gap: 4px;
+    row-gap: 4px;
 }
 .header{
     position: absolute;
     height: 50px;
-    width: 100px;
-    background-color: chocolate;
+    width: 100%;
+    background-color: #ff4500;
     z-index: 6;
 }
 body{
@@ -28,8 +28,8 @@ body{
 }
 .sidebar{
     position: absolute;
-    width: 100px;
-    background-color: red;
+    width: 100%;
+    background-color: #ff0000;
     height: 100vh;
     z-index: 5;
     padding-top: 50px;
